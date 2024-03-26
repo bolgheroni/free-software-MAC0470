@@ -1,0 +1,1 @@
+These were the packages I had to install manually to be able to compile the kernel. 
