@@ -1,0 +1,56 @@
+Module                  Size  Used by
+nls_utf8               16384  2
+cifs                 1314816  0
+cifs_arc4              16384  1 cifs
+cifs_md4               16384  1 cifs
+dns_resolver           16384  1 cifs
+fscache               376832  1 cifs
+netfs                  57344  1 fscache
+binfmt_misc            24576  1
+ppdev                  24576  0
+parport_pc             40960  0
+pcspkr                 16384  0
+parport                73728  2 parport_pc,ppdev
+button                 24576  0
+evdev                  28672  2
+joydev                 28672  0
+sg                     40960  0
+serio_raw              20480  0
+dm_mod                184320  0
+configfs               57344  1
+fuse                  176128  1
+loop                   32768  0
+efi_pstore             16384  0
+qemu_fw_cfg            20480  0
+ip_tables              36864  0
+x_tables               61440  1 ip_tables
+autofs4                53248  2
+ext4                  983040  1
+crc16                  16384  1 ext4
+mbcache                16384  1 ext4
+jbd2                  167936  1 ext4
+crc32c_generic         16384  2
+sd_mod                 65536  3
+t10_pi                 16384  1 sd_mod
+crc64_rocksoft         20480  1 t10_pi
+crc64                  20480  1 crc64_rocksoft
+crc_t10dif             20480  1 t10_pi
+crct10dif_generic      16384  1
+sr_mod                 28672  0
+cdrom                  81920  1 sr_mod
+crct10dif_common       16384  2 crct10dif_generic,crc_t10dif
+bochs                  16384  0
+drm_vram_helper        20480  1 bochs
+ata_generic            16384  0
+drm_kms_helper        204800  4 bochs,drm_vram_helper
+drm_ttm_helper         16384  2 bochs,drm_vram_helper
+ata_piix               45056  2
+ttm                    94208  2 drm_vram_helper,drm_ttm_helper
+libata                401408  2 ata_piix,ata_generic
+drm                   614400  6 drm_kms_helper,bochs,drm_vram_helper,drm_ttm_helper,ttm
+psmouse               184320  0
+scsi_mod              286720  4 sd_mod,libata,sg,sr_mod
+e1000                 163840  0
+i2c_piix4              28672  0
+scsi_common            16384  4 scsi_mod,libata,sg,sr_mod
+floppy                 86016  0
