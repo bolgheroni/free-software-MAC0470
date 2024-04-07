@@ -7,8 +7,8 @@ iio/
 new_iio/
 
 # VM SSH Keys
-SL_TEST_KEY
-SL_TEST_KEY.pub
+SL_TEST_KEY*
+SL_KEY_2*
 
 # Packages 
 *.rpm
