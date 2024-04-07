@@ -1,6 +1,6 @@
 # Distros images
 *.iso
-L-KERNEL-BASIC
+L-KERNEL-*
 
 # IIO repos
 iio/
